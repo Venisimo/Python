@@ -40,12 +40,29 @@ def task4():
     lst3.append(lst2)
     print(lst3)
     return lst3
-task4()
+#task4()
 
 def task5(x):
     lst4 = []
     for i in range(len(x[0])):
         lst4.append(x[0][i] + x[1][i])
     print(lst4)
-task5(task4())
+#task5(task4())
 
+def task6():
+    dct1 = {"a": 14, "b": 5, "c": 3}
+    minimum = dct1["a"]
+    for key, value in dct1.items():
+        if minimum > value:
+            minimum = value
+    print(key)
+#task6()
+
+def task7():
+    lst1 = [1, 2, 3, 4, 0, 9]
+    minimum = lst1[0]
+    for i in range(len(lst1)):
+        if minimum > lst1[i]:
+            minimum = lst1[i]
+    print(minimum)
+task7()
